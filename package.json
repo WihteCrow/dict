@@ -1,0 +1,21 @@
+{
+  "name": "dict",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dict",
+  "bin": {
+    "dict": "dict"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "translation"
+  ],
+  "author": "crow",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.65.0",
+    "underscore": "^1.8.3"
+  }
+}
