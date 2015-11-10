@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#! /usr/bin/env node
 
 /**
  * @type {string} API
@@ -16,7 +16,7 @@ var getUrl = require('./require/url.js');
 var format = require('./require/format.js');
 var toJSON = require('./require/json.js');
 
-var url, option;
+var url, option, input;
 
 /**
  * 请求返回数据处理
@@ -32,8 +32,10 @@ function _callback(error, response, body) {
     }
 }
 
+input = process.argv[2] || 'null';
+
 url = getUrl(API, {
-    'q': 'love',
+    'q': input,
     'client_id': API_KEY,
     'from': 'en',
     'to': 'zh'
