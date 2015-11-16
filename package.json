@@ -3,8 +3,9 @@
   "version": "1.0.2",
   "description": "",
   "main": "dict",
+  "preferGlobal": true,
   "bin": {
-    "dict": "dict-cli"
+    "dict": "bin/dict"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
